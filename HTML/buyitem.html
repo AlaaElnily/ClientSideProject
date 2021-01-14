@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacya Buy Item</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #c1ddf2;">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html"" style="font-family: 'Times New Roman', Times, serif;">Pharmacya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manageusers.html">Manage Users</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Manage Items
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="buyitem.html">Buy Item</a>
+                <a class="dropdown-item" href="sellitem.html">Sell Item</a>
+
+              </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+      </nav>
+      <img src="../Photos/1-3_low.jpg" alt="" class="w-100">
+      <div class="p-3 pb-5 rounded-bottom mb-5" style="background-color: #c1ddf2;" >
+        </div>
+    <div class='container'>
+        <div  id="container">
+            <video class="mx-auto w-75" autoplay="true" id="videoElement" style="display: block;">
+            
+            </video>
+            
+            <div class="row">
+              <div class='col-md-6 '>
+                <button  class="btn btn-lg btn-block p-3 my-5 " style="  background-color: #c1ddf2;" onclick="stop();" >Stop Video</button>
+              </div> 
+              <div class='col-md-6'>
+                <button class="btn btn-lg btn-block p-3 my-5" style="  background-color: #c1ddf2;" onclick="takescreenshot();">Take ScreenShot</button>
+             </div>    
+          </div> 
+<!-- p-auto w-100 -->
+            <canvas class="mx-auto w-75" id="showscreenshot" style="display: block;" ></canvas>
+            
+        </div>
+        <p id="buyalert"></p>
+            <div class="input-group input-group-lg my-5 mx-auto ">
+              <div class="input-group-prepend">
+                <span class="input-group-text " id="inputGroup-sizing-lg" style="width: 110px; background-color: #c1ddf2;">Name</span>
+              </div>
+              <input id="itemname" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            </div>
+            <div class="input-group input-group-lg my-5 mx-auto">
+              <div class="input-group-prepend">
+                <span class="input-group-text " id="inputGroup-sizing-lg" style="  background-color: #c1ddf2;">Quantity</span>
+              </div>
+              <input id="itemquantity" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          </div>
+          <div class="input-group input-group-lg my-5 mx-auto">
+            <div class="input-group-prepend ">
+              <span class="input-group-text " id="inputGroup-sizing-lg" style=" width: 110px; background-color: #c1ddf2;">Price</span>
+            </div>
+            <input id="itemprice" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+
+                <button id="add" type="button" onclick="AddItem()" class="btn btn-lg btn-block p-3 mb-5" style="background-color: #c1ddf2;">Insert Item</button>
+      <p id="invoice" style="text-align: center;"></p>
+      <h2 style='text-align:center;'>Invoice</h2>
+      <br><table class='mx-auto' id="invoicetablebuy"><tr><th>ID</th><th>Date</th><th>User</th> <th>Type</th><th>Items</th><th>Quantity</th> <th>Price</th><th>Total Price</th></tr>
+        </table>
+        <i class='bi bi-printer-fill text-center' onclick="window.print(),location.reload()" style='font-size: 3rem; text-align: center; display: block;'></i>
+      </div>
+    <div class=" p-3 rounded-top bg-secondary w-100 fixed-bottom">
+        <div class="container">
+            <div style="text-align: center;">
+                <i class="bi bi-telephone-fill p-2 " onclick="phone()" style="font-size: 2rem; color: #c1ddf2;"></"></i>
+                <p style="font-size: 1.5rem; color: #c1ddf2; display: inline; font-family:fantasy"> &copy; Alaa Elnily </p>
+                <i class="bi bi-envelope-fill p-2" onclick="Email()" style="font-size: 2rem; color: #c1ddf2;"></"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../CryptoJS v3/rollups/md5.js"></script>
+    <script src="../JavaScript/AlaaElnilyProject.js"></script>
+</body>
+</html>
+

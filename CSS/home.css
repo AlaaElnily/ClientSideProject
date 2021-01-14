@@ -1,0 +1,26 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  #product{
+    width: 286px;
+    border-radius: 10%;
+  }
+  #ul{
+    list-style-type:none ;
+    /* background: #ade0f5; */
+    border-radius: 10%;
+    text-align: center;
+
+    
+}
+#liproduct{
+  background: #c1ddf2;
+    text-align: center;
+    border-radius: 10%;
+    margin: 30px;
+    display: inline-block;
+}
+body{
+  margin-bottom: 100px;
+}

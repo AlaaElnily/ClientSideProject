@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacya Admin Interface</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #c1ddf2;">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html"" style="font-family: 'Times New Roman', Times, serif;">Pharmacya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manageusers.html">Manage Users</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Manage Items
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="buyitem.html">Buy Item</a>
+                <a class="dropdown-item" href="sellitem.html">Sell Item</a>
+
+              </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+    <img src="../Photos/1-3_low.jpg" alt="" class="w-100">
+
+      <div class="p-3 pb-5 rounded-bottom mb-5" style="background-color: #c1ddf2;" >
+        
+        </div>
+    <div class='container'>
+        <div class="row">
+            <div class='col-md-6 '>
+                
+                <button id="login" onclick="GoManUsers()" type="button" class="btn btn-lg btn-block p-3 mb-5 " style="background-color: #c1ddf2;">Manage Users</button>
+    
+    
+            </div> 
+            <div class='col-md-6'>
+                
+                <button id="login" onclick="GoManItems()" type="button" class="btn btn-lg btn-block p-3 mb-5" style="background-color: #c1ddf2;"><i class="bi bi-cart-fill"></i> Manage Items</button>
+            </div>    
+        </div> 
+        <button id="login" onclick="todayinvoice()" type="button" class="btn btn-lg btn-block p-3 " style="background-color: #c1ddf2;">Get Today's Invoice</button>
+        <button id="login" onclick="viewusers()" type="button" class="btn btn-lg btn-block p-3 " style="background-color: #c1ddf2;">View all users</button>
+    <p id="today" class="mt-5" style="text-align: center;"></p>
+      </div>
+      <div class=" p-3 rounded-top bg-secondary w-100 fixed-bottom">
+        <div class="container">
+          <div style="text-align: center;">
+            <i class="bi bi-telephone-fill p-2 " onclick="phone()" style="font-size: 2rem; color: #c1ddf2;"></i>
+            <p style="font-size: 1.5rem; color: #c1ddf2; display: inline; font-family:fantasy"> &copy; Alaa Elnily </p>
+            <i class="bi bi-envelope-fill p-2" onclick="Email()" style="font-size: 2rem; color: #c1ddf2;"></i>
+          </div>
+        </div>
+    </div>
+    
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../CryptoJS v3/rollups/md5.js"></script>
+    <script src="../JavaScript/AlaaElnilyProject.js"></script>
+</body>
+</html>
+
+
+
